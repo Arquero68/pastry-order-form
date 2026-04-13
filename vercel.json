@@ -1,5 +1,7 @@
 {
-  "rewrites": [
-    { "source": "/(?!images/.*)", "destination": "/" }
+  "routes": [
+    { "src": "/images/(.*)", "dest": "/images/$1" },
+    { "src": "/public/(.*)", "dest": "/public/$1" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
